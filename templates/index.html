@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <style>
+      .xyz {
+        font-weight: bold;
+        font-size: x-large;
+      }
+      .white_lable
+      {
+       color: white;
+      }
+      body
+      {
+        text-align:center;
+        align:center;
+        background-image: url({{url_for('static', filename='builtin/2.jpg')}})
+      }
+      input[type=text] {
+      width: 50%;
+      font-size: larger;
+      padding: 12px 20px;
+      margin: 1px 0;
+      box-sizing: border-box;
+      }
+    </style>
+  </head>
+<body>
+<h1 style = "text-align: center; font-size: xx-large;">Heart Disease Prediction</h1>
+<form action="/submit" method='post'>
+    <label class="xyz" for="sex">Sex:</label><br>
+    <input type="text" id="txtsex"  name="sex" value="0"><br><br>
+    <label class="xyz" for="age">Age:</label><br>
+    <input type="text" id="txtage" name="age" value="0"><br>
+    <label class="xyz" for="currentSmoker ">CurrentSmoker:</label><br>
+    <input type="text" id="currentSmoker" name="currentSmoker" value="0"><br><br>
+    <label class="xyz" for="cigsPerDay">CigsPerDay:</label><br>
+    <input type="text" id="cigsPerDay" name="cigsPerDay" value="0"><br><br>
+    <label class="xyz white_lable" for="BPMedication ">BPMedication:</label><br>
+    <input type="text" id="BPMedication" name="BPMedication" value="0"><br><br>
+    <label class="xyz white_lable" for="prevalentStroke">PrevalentStroke:</label><br>
+    <input type="text" id="prevalentStroke" name="prevalentStroke" value="0"><br><br>
+    <label class="xyz white_lable" for="hypertensionprevalence">Hypertensionprevalence:</label><br>
+    <input type="text" id="hypertensionprevalence" name="hypertensionprevalence" value="0"><br><br>
+    <label class="xyz white_lable" for="diabetes">Diabetes:</label><br>
+    <input type="text" id="diabetes" name="diabetes" value="0"><br><br>
+    <label class="xyz" for="totChol	">TotChol	:</label><br>
+    <input type="text" id="totChol" name="totChol" value="0"><br><br>
+    <label class="xyz" for="sysBP">SysBP:</label><br>
+    <input type="text" id="sysBP" name="sysBP" value="0"><br><br>
+    <label class="xyz" for="diaBP">DiaBP:</label><br>
+    <input type="text" id="diaBP" name="diaBP" value="0"><br><br>
+    <label class="xyz" for="BodyMask Index">BodyMask Index	:</label><br>
+    <input type="text" id="BodyMaskIndex	" name="bodyMaskIndex" value="0"><br><br>
+    <label class="xyz" for="heartRate	">HeartRate	:</label><br>
+    <input type="text" id="heartRate" name="heartRate" value="0"><br><br>
+    <label class="xyz" for="glucose	">Glucose	:</label><br>
+    <input type="text" id="glucose" name="glucose" value="0"><br><br>
+    <h1>{{result}} </h1>
+    
+    <input type="submit" value="Submit">
+  </form> 
+</body>
+</html>
