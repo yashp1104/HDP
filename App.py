@@ -16,7 +16,6 @@ def welcome():
     return render_template('index.html')
 
 
-
 @app.route('/submit', methods=['POST', 'GET'])
 def submit():
     total_score = 0
